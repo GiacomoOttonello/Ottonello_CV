@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.paper {
+    width: 210mm; /* Larghezza di un foglio A4 */
+    height: 297mm; /* Altezza di un foglio A4 */
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+    border: 1px solid #ddd;
+    margin: 20px; /* Distanza dal bordo della finestra */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.header,
+.container {
+    display: flex;
+    width: 100%; /* Larghezza completa del foglio */
+}
+.header {
+    height: 240px; /* Altezza aumentata dei div superiori */
+}
+.header .left-header {
+    background-color: #868686; /* Colore grigio chiaro per il div "Foto" */
+    flex: 1; /* 1/3 della larghezza */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente il contenuto */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+}
+.header .right-header {
+    background-color: #fff; /* Colore bianco per il div "Giacomo Ottonello" */
+    flex: 2; /* 2/3 della larghezza */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente il contenuto */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+}
+.header h1 {
+    font-size: 48px; /* Testo molto più grande per "Giacomo Ottonello" */
+    margin: 0;
+}
+.profile-img {
+    width: 170px; /* Imposta una larghezza fissa dell'immagine */
+    height: 170px; /* Imposta un'altezza fissa dell'immagine */
+    object-fit: cover; /* Rende l'immagine adattabile senza distorsioni */
+    border-radius: 50%; /* Rende l'immagine tonda */
+    border: 1px solid rgb(82, 82, 82); /* Aggiungi un bordo nero di 3px */
+    box-sizing: border-box; /* Garantisce che il bordo sia incluso nelle dimensioni dell'immagine */
+}
+.container {
+    flex: 1; /* Occupa il resto dello spazio */
+}
+.left {
+    background-color: #413e3e;
+    color: #fff; /* Testo bianco per il div grigio */
+    flex: 1; /* 1/3 della larghezza */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.right {
+    flex: 2; /* 2/3 della larghezza */
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+   
+    display: inline-block;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.5; /* Migliora la leggibilità */
+}
